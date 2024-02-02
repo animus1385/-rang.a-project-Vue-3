@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './fonts';
+@import './variables';
+
+html,
+body {
+    @apply overflow-hidden font-[Inter];
+}
+
+#app {
+    @apply h-screen overflow-x-hidden overflow-y-scroll;
+}
+
+.content {
+    @apply max-w-[1440px] flex items-center justify-center h-screen;
+}
+
+.container {
+    @apply grid grid-cols-[200px_1fr] gap-[54px] h-full items-center;
+}
+
+.analitic-panel {
+    &__title {
+        @apply text-[50px] leading-[56px] font-bold mb-[11px] tracking-[-0.31px];
+    }
+}

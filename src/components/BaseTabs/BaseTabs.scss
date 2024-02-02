@@ -1,0 +1,19 @@
+.tabs {
+    @apply grid grid-cols-[repeat(2,max-content)] gap-[20px] mb-[34px];
+
+    &__list {
+        @apply grid grid-cols-[repeat(5,max-content)] items-center  gap-[20px];
+    }
+}
+
+.calendar {
+    &__slot-date {
+        @apply max-w-max border-[#F5F5F5] border-[2px] border-solid py-[4px] px-[20px] rounded-[5px] overflow-hidden cursor-pointer;
+
+        transition: background-color 0.2s linear;
+
+        &:hover {
+            @apply bg-[#F5F5F5];
+        }
+    }
+}

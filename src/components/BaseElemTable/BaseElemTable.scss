@@ -1,0 +1,109 @@
+.table-elem {
+    @apply grid grid-cols-[210px_145px_170px_259px_150px] gap-[24px]  mb-[16px] items-start;
+
+    &__sites {
+        @apply flex items-center;
+    }
+
+    &__icon {
+        @apply mr-[8px] flex;
+    }
+
+    &__toggle {
+        @apply flex items-center cursor-pointer relative mr-[15px];
+
+        &-bg {
+            @apply bg-gray-200 border-2 border-gray-200 h-[24px] w-[40px] rounded-full;
+
+            &::after {
+                content: '';
+
+                @apply absolute top-[2.5px] left-[0.7px] bg-white border border-gray-300 rounded-full h-[19px] w-[19px] transition shadow-sm;
+            }
+        }
+
+        &-checkbox {
+            @apply sr-only;
+        }
+
+        input:checked + &-bg::after {
+            transform: translateX(90%);
+
+            @apply border-white;
+        }
+
+        input:checked + &-bg {
+            @apply bg-[#0B74B0] border-[#0B74B0];
+        }
+    }
+
+    &__rating-review {
+        @apply grid grid-cols-2 gap-[25px] justify-start;
+    }
+
+    &__company {
+        @apply text-[#0B74B0] underline;
+
+        transition: color 0.2s linear;
+
+        &:hover {
+            @apply text-[#B6D6E8];
+        }
+    }
+
+    &__sub-elem,
+    &__grow-review {
+        @apply flex flex-col items-center left-0;
+    }
+
+    &__grow-review {
+        @apply items-start;
+
+        .table-elem__text-top {
+            @apply text-[#219B60];
+        }
+    }
+
+    &__bad-review-now {
+        @apply grid grid-cols-[40px_1fr] gap-[21px] items-center;
+
+        .table-elem__text {
+            span:nth-child(1) {
+                @apply text-[#D8602A];
+            }
+        }
+    }
+
+    &__cell,
+    &__text {
+        @apply w-max text-[#000000] text-[16px] leading-[24px] font-normal  text-center;
+    }
+
+    &__cell {
+        @apply bg-[#FCF0EA]  px-[8px] rounded-[5px];
+
+        &--light {
+            @apply bg-[#FFFBD8];
+        }
+    }
+
+    &__text {
+        @apply text-[#9A9A9A];
+
+        &--green {
+            @apply text-[#219B60];
+        }
+
+        &--orange {
+            @apply text-[#D8602A];
+        }
+    }
+
+    &__place-in-city {
+        @apply flex items-center;
+
+        span:nth-child(1) {
+            @apply mr-[5px];
+        }
+    }
+}

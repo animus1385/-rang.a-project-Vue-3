@@ -1,0 +1,17 @@
+.header {
+    @apply bg-black sticky top-0 px-[31px] py-[10px] grid gap-[24px] grid-cols-[200px_1fr_repeat(3,max-content)] items-center;
+
+    &__wigets {
+        @apply flex items-center text-white text-[13px] font-normal leading-[16px];
+
+        transition: color 0.1s linear;
+
+        &:hover {
+            @apply text-[#D2D2D2];
+        }
+    }
+
+    &__wigets-icon {
+        @apply mr-[5px]
+    }
+}

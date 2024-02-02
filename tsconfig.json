@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "composite": false,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "target": "ES5",
+        "module": "ESNext",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "paths": {
+            "@/components/*": ["./src/components/*"],
+            "@/ui/*": ["./src/ui/*"],
+            "@/assets/*": ["./src/assets/*"],
+            "@/interface/*": ["./src/interface/*"],
+        },
+    },
+    "exclude": ["**/*.test.ts", "node_modules"],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+        },
+    },
+    "include": ["**/*.ts", "**/*.vue", "src/ui/CustomSelect/CustomSelect.test.tsx"],
+}

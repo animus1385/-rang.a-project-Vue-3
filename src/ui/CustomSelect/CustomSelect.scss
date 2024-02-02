@@ -1,0 +1,69 @@
+.custom-select {
+    @apply relative w-full outline-none  max-w-max;
+
+    &__selected {
+        @apply grid grid-cols-[1fr_15px] gap-[10px] justify-center items-center text-[13px] text-white leading-[16px] font-normal overflow-hidden rounded-[6px] bg-[#080d0e] cursor-pointer;
+
+        transition: color 0.1s linear;
+
+        &.open {
+            .custom-select__icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:hover {
+            @apply text-[#D2D2D2];
+
+            .custom-select__icon {
+                &::before,
+                &::after {
+                    @apply bg-[#D2D2D2];
+                }
+            }
+        }
+    }
+
+    &__icon {
+        @apply m-auto flex items-center justify-center w-[10px] h-[10px] relative overflow-hidden rounded-[5px];
+
+        transition: transform 0.1s linear;
+
+        &::before,
+        &::after {
+            content: '';
+
+            @apply w-[1px] h-[10px] bg-white absolute top-[-2px];
+
+            transition: background-color 0.1s linear;
+        }
+
+        &::before {
+            @apply left-0;
+
+            transform: rotate(133deg) translateY(-1.2px) translateX(-0.5px);
+        }
+
+        &::after {
+            @apply right-0;
+
+            transform: rotate(45deg) translateY(1px) translateX(-0.5px);
+        }
+    }
+
+    &__items {
+        @apply  max-w-[300px] rounded-[5px] text-white overflow-hidden border-[1px] border-solid absolute bg-black top-[30px];
+
+        &.hide {
+            @apply hidden;
+        }
+    }
+
+    &__item {
+        @apply text-[13px] text-white cursor-pointer text-wrap  py-[5px]  px-[10px] ;
+
+        &:hover {
+            @apply bg-[#b68a28];
+        }
+    }
+}

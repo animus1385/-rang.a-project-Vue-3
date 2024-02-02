@@ -1,0 +1,27 @@
+.panel-statistic {
+    @apply grid grid-cols-[repeat(5,max-content)] gap-[30px] mb-[23px];
+
+    &__elem {
+        @apply grid grid-cols-[max-content_80px] items-center gap-[8px] max-w-max;
+
+        &--rating {
+            @apply grid gap-[8px] grid-cols-[repeat(2,max-content)];
+        }
+    }
+
+    &__number {
+        @apply text-[36px] font-bold leading-[40px];
+
+        &--green {
+            @apply text-green-500;
+        }
+
+        &--red {
+            @apply text-red-500;
+        }
+    }
+
+    &__text {
+        @apply text-[13px] font-normal text-black leading-[14px];
+    }
+}

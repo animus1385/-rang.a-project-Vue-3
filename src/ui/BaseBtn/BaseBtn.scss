@@ -1,0 +1,13 @@
+.base-btn {
+    @apply flex items-center justify-normal border-[1px] border-solid border-[#D2D2D2] rounded-[5px] overflow-hidden py-[4px] px-[19px]  text-[16px] leading-[24px] font-normal;
+
+    transition: background-color 0.3s linear;
+
+    &:hover {
+        @apply bg-[#F5F5F5];
+    }
+
+    &.active {
+        @apply bg-[#F5F5F5] border-[#F5F5F5];
+    }
+}

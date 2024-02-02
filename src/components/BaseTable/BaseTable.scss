@@ -1,0 +1,39 @@
+.table {
+    @apply flex flex-col max-w-[1128px];
+
+    &__content {
+        @apply h-max flex flex-col border-solid border-[1px] border-[#D2D2D2] rounded-[10px] overflow-hidden py-[32px] px-[24px];
+    }
+
+    &__title {
+        @apply mb-[16px] text-[24px] font-bold  leading-[32px] tracking-[-0.1px] flex;
+    }
+
+    &__head {
+        @apply grid grid-cols-[210px_145px_170px_259px_109px]  gap-[23px] mb-[21px];
+    }
+
+    &__head-elem {
+        @apply grid grid-cols-2 gap-x-[24px] relative;
+
+        &:nth-child(2) {
+            @apply left-0;
+        }
+    }
+
+    &__label {
+        @apply text-black text-[16px] leading-[20px] font-[500] col-span-full text-balance tracking-normal flex items-end justify-start;
+
+        span:nth-child(1) {
+            @apply max-w-min mr-[5px];
+        }
+
+         span:nth-child(2) {
+            @apply mb-[2px];
+        }
+    }
+
+    &__head-sub-elem {
+        @apply font-normal leading-[24px];
+    }
+}
