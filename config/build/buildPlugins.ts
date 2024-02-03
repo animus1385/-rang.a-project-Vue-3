@@ -22,6 +22,16 @@ export function buildPlugins({ paths, isDev }: BuildOptions) {
             __VUE_PROD_DEVTOOLS__: false,
             __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
         }),
+        {
+            apply: compiler => {
+                compiler.hooks.done.tap('DonePlugin', stats => {
+                    console.log('Compile is done !');
+                    setTimeout(() => {
+                        process.exit(0);
+                    });
+                });
+            },
+        },
     ];
     if (isDev) {
         plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
