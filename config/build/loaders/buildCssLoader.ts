@@ -4,8 +4,7 @@ export function buildCssLoader(isDev: boolean) {
     return {
         test: /\.(s[ac]ss|css)$/i,
         use: [
-            isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
-            'vue-style-loader',
+            isDev ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
             'css-loader',
             'postcss-loader',
             'sass-loader',
