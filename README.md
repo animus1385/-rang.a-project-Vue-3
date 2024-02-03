@@ -1,15 +1,43 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Тестовое задание rang.i !
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
+## Сборка проекта production
 
 ```
-yarn build
+npm run build:prod
 ```
 
-to bundle your application
+## Сборка проекта в development
+
+```
+npm run build:dev
+```
+
+## запуск проекта
+
+```
+npm run start
+```
+
+## Проверка elslit
+
+```
+npm run lint:ts
+```
+
+## исправление ошибок elslit
+
+```
+npm run lint:ts:fix
+```
+
+## Проверка stylelint
+
+```
+npm run lint:css
+```
+
+## исправление ошибок stylelint
+
+```
+npm run lint:css:fix
+```
