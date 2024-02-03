@@ -1,4 +1,4 @@
-import * as App from './App.vue';
+import App from './App.vue';
 import VCalendar from 'v-calendar';
 import { createApp, defineAsyncComponent } from 'vue';
 import { createPinia } from 'pinia';

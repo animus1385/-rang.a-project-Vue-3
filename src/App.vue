@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ElemTable } from '@/interface/ElemTable';
 import data from '@/components/BaseTable/company.json';
-import * as BaseTabs from '@/components/BaseTabs/BaseTabs.vue';
-import * as BaseTable from '@/components/BaseTable/BaseTable.vue';
-import * as BaseHeader from '@/components/BaseHeader/BaseHeader.vue';
-import * as BaseSidebar from '@/components/BaseSidebar/BaseSidebar.vue';
-import * as BaseElemTable from '@/components/BaseElemTable/BaseElemTable.vue';
-import * as BasePanelStatistic from '@/components/BasePanelStatistic/BasePanelStatistic.vue';
+import  BaseTabs from '@/components/BaseTabs/BaseTabs.vue';
+import  BaseTable from '@/components/BaseTable/BaseTable.vue';
+import  BaseHeader from '@/components/BaseHeader/BaseHeader.vue';
+import  BaseSidebar from '@/components/BaseSidebar/BaseSidebar.vue';
+import  BaseElemTable from '@/components/BaseElemTable/BaseElemTable.vue';
+import  BasePanelStatistic from '@/components/BasePanelStatistic/BasePanelStatistic.vue';
 
 const elems: ElemTable[] = data;
 </script>
