@@ -4,6 +4,9 @@ export function buildVueLoader() {
         use: [
             {
                 loader: 'vue-loader',
+                options: {
+                    hotReload: false, // disables Hot Reload
+                },
             },
             {
                 loader: 'vue-svg-inline-loader',

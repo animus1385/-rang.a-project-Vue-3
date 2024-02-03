@@ -1,9 +1,9 @@
 export function buildTypescriptLoader() {
     return {
-        test: /\.(ts|tsx)$/,
+        test: /\.ts$/,
         loader: 'ts-loader',
         options: {
-            appendTsSuffixTo: [/\.vue$/],
+            // appendTsSuffixTo: [/\.vue$/],
         },
         exclude: /node_modules/,
     };

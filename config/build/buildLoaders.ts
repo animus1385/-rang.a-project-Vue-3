@@ -20,5 +20,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const vueLoader = buildVueLoader();
 
-    return [svgLoader, vueLoader, fileLoader, typescriptLoader, babelLoader, cssLoader];
+    return [typescriptLoader, vueLoader, babelLoader, cssLoader, svgLoader, fileLoader];
 }

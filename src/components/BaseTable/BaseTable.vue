@@ -2,7 +2,7 @@
     <div class="table">
         <h2 class="table__title">
             Динамика рейтинга и отзывов за 30 дней
-            <ToolTip class="ml-[5px]" text="Всплывающая подсказка про активность" />
+            <ToolTip  class="ml-[5px]" text="Всплывающая подсказка про активность" />
         </h2>
         <div class="table__content">
             <slot name="head"></slot>

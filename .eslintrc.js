@@ -4,7 +4,6 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: [ 'plugin:i18next/recommended'],
     overrides: [
         {
             env: {
