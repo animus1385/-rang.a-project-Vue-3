@@ -17,14 +17,14 @@
             "@/components/*": ["./src/components/*"],
             "@/ui/*": ["./src/ui/*"],
             "@/assets/*": ["./src/assets/*"],
-            "@/interface/*": ["./src/interface/*"],
-        },
+            "@/interface/*": ["./src/interface/*"]
+        }
     },
-    "exclude": ["**/*.test.ts", "node_modules"],
+    "exclude": ["./src/**/*.test.ts", "node_modules"],
     "ts-node": {
         "compilerOptions": {
-            "module": "CommonJS",
-        },
+            "module": "CommonJS"
+        }
     },
-    "include": ["**/*.ts", "**/*.vue"],
+    "include": ["./src/**/*.ts"]
 }

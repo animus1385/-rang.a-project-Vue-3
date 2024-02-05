@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "iconCompany": "/svg/Yandex.svg",
+        "iconCompany": "@/assets/svg/Yandex.svg",
         "company": "Yandex",
         "companyLink": "#",
         "startReviewProc": 2.2,
@@ -16,7 +16,7 @@
     },
     {
         "id": 2,
-        "iconCompany": "/svg/Prodoctorov.svg",
+        "iconCompany": "@/assets/svg/Prodoctorov.svg",
         "company": "Prodoctorov",
         "companyLink": "#",
         "startReviewProc": 3.8,
@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "iconCompany": "/svg/Google.svg",
+        "iconCompany": "@/assets/svg/Google.svg",
         "company": "Google",
         "companyLink": "#",
         "startReviewProc": 3.2,
@@ -46,7 +46,7 @@
     },
     {
         "id": 4,
-        "iconCompany": "/svg/Zoon.svg",
+        "iconCompany": "@/assets/svg/Zoon.svg",
         "company": "Zoom",
         "companyLink": "#",
         "startReviewProc": 1.2,
@@ -76,7 +76,7 @@
     },
     {
         "id": 6,
-        "iconCompany": "/svg/Yell.svg",
+        "iconCompany": "@/assets/svg/Yell.svg",
         "company": "Yell",
         "companyLink": "#",
         "startReviewProc": 4.1,
