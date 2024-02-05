@@ -5,7 +5,7 @@
                 <input type="checkbox" :id="`toggle-${options.id}`" class="table-elem__toggle-checkbox" />
                 <div class="table-elem__toggle-bg"></div>
             </label>
-            <img svg-inline class="table-elem__icon" :src="options.iconCompany" :alt="options.company" />
+            <img  class="table-elem__icon" :src="options.iconCompany" :alt="options.company" />
             <a :href="options.companyLink" class="table-elem__company">{{ options.company }}</a>
         </div>
         <div class="table-elem__rating-review">

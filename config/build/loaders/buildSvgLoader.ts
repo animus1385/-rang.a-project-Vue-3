@@ -1,6 +1,13 @@
 export function buildSvgLoader() {
     return {
         test: /\.svg$/,
-        use: [ '@svgr/webpack'],
+        oneOf: [
+            {
+                use: 'svg-inline-loader',
+            },
+            {
+                use: 'url-loader',
+            },
+        ],
     };
 }

@@ -1,15 +1,12 @@
 <template>
     <header class="header">
         <a href="/" class="header__logo">
-            <picture class="header__picture">
                 <img svg-inline class="header__img" src="@/assets/svg/logo.svg" alt="logo" />
-            </picture>
         </a>
         <CustomSelect :options="select1.options" :default="select1.default" class="select" />
         <a href="#" class="header__wigets">
-            <picture class="header__picture">
                 <img svg-inline class="header__wigets-icon" src="@/assets/svg/star.svg" /> Виджет «Хорошее место»
-            </picture>
+    
         </a>
         <CustomSelect :options="select2.options" :default="select2.default" class="select" />
         <CustomSelect :options="select3.options" :default="select3.default" class="select" />

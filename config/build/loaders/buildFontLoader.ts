@@ -1,3 +1,4 @@
+
 export function buildFontLoader() {
     return {
         test: /\.(woff2|woff)$/i,
@@ -5,7 +6,8 @@ export function buildFontLoader() {
             {
                 loader: 'file-loader',
                 options: {
-                    OutputPath: 'fonts',
+                    name: '[name].[ext]',
+                    outputPath: 'fonts/',
                 },
             },
         ],

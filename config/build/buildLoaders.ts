@@ -8,14 +8,14 @@ import { BuildOptions } from './types/config';
 import { buildVueLoader } from './loaders/buildVueLoader';
 import { buildFontLoader } from './loaders/buildFontLoader';
 
-export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     const babelLoader = buildBabelLoader();
 
-    const fileLoader = buildFileLoader();
+    const fileLoader = buildFileLoader(options);
 
     const svgLoader = buildSvgLoader();
 
-    const cssLoader = buildCssLoader(isDev);
+    const cssLoader = buildCssLoader(options.isDev);
 
     const typescriptLoader = buildTypescriptLoader();
 
@@ -23,5 +23,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const fontLoader = buildFontLoader();
 
-    return [typescriptLoader, vueLoader, babelLoader, cssLoader, svgLoader, fontLoader, fileLoader ];
+    return [typescriptLoader, vueLoader, babelLoader, cssLoader, svgLoader, fontLoader, fileLoader];
 }

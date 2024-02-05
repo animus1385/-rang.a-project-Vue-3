@@ -10,7 +10,10 @@ export function buildVueLoader() {
             },
             {
                 loader: 'vue-svg-inline-loader',
+
+                options: {},
             },
+           
         ],
     };
 }
