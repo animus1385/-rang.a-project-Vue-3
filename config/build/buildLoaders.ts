@@ -6,6 +6,7 @@ import { buildSvgLoader } from './loaders/buildSvgLoader';
 import { buildTypescriptLoader } from './loaders/buildTypescriptLoader';
 import { BuildOptions } from './types/config';
 import { buildVueLoader } from './loaders/buildVueLoader';
+import { buildFontLoader } from './loaders/buildFontLoader';
 
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     const babelLoader = buildBabelLoader();
@@ -20,5 +21,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const vueLoader = buildVueLoader();
 
-    return [typescriptLoader, vueLoader, babelLoader, cssLoader, svgLoader, fileLoader];
+    const fontLoader = buildFontLoader();
+
+    return [typescriptLoader, vueLoader, babelLoader, cssLoader, svgLoader, fontLoader, fileLoader ];
 }

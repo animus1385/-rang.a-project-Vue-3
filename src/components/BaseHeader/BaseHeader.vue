@@ -2,7 +2,7 @@
     <header class="header">
         <a href="/" class="header__logo">
             <picture class="header__picture">
-                <img class="header__img" src="/svg/logo.svg" alt="logo" />
+                <img svg-inline class="header__img" src="@/assets/svg/logo.svg" alt="logo" />
             </picture>
         </a>
         <CustomSelect :options="select1.options" :default="select1.default" class="select" />

@@ -1,11 +1,11 @@
-export function buildFileLoader() {
+export function buildFontLoader() {
     return {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(woff2|woff)$/i,
         use: [
             {
                 loader: 'file-loader',
                 options: {
-                    OutputPath: 'images',
+                    OutputPath: 'fonts',
                 },
             },
         ],
